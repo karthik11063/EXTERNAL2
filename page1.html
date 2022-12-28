@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .example {
+                width:50px;
+                height:20px;
+                background-color:red;
+                animation-name:example;
+                animation-duration: 10s;
+                animation-iteration-count:infinite;
+                animation-timing-function:ease-in;
+        }
+        @keyframes example{
+            from{
+                transform:rotate(360deg);
+            }
+            to{
+                transform:rotate(0deg);
+            }
+        }
+        .ex{
+            display:inline-grid;
+            grid-template-columns: 300px 300px 300px;
+            justify-items:center;
+           
+        }
+        .exx{
+            width:100px;
+            height:100px;
+            transition-property:width;
+            transition-duration: 4s;
+            background-color: red;
+        }
+        .exx:hover{
+            width:1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ex">
+        <div class="example"></div>
+        <div class="example"></div>
+        <div class="example"></div>
+        <div class="example"></div>
+        <div class="example"></div>
+        <div class="example"></div>
+        <div class="example"></div>
+        <div class="example"></div>
+    </div>
+    <div class="exx"></div>
+</body>
+</html>
